@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/support_protection_hotline"
+        android:textColor="#A40B0B"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Mục Police -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Biểu tượng ngôi sao -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/police_icon"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <!-- Chữ POLICE -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/police"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Biểu tượng điện thoại -->
+        <ImageView
+            android:id="@+id/police_call_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/call_police"
+            android:src="@android:drawable/ic_menu_call"
+            app:tint="#000000" />
+
+        <!-- Biểu tượng máy quay -->
+        <ImageView
+            android:id="@+id/police_camera_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/camera_for_police"
+            android:src="@android:drawable/presence_video_online"
+            app:tint="#6D4A4A" />
+    </LinearLayout>
+
+    <!-- Mục Hospital -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Biểu tượng chữ thập -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/hospital_icon"
+            android:src="@drawable/ic_hospital"
+            app:tint="#000000" />
+
+        <!-- Chữ HOSPITAL -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hospital"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Biểu tượng điện thoại -->
+        <ImageView
+            android:id="@+id/hospital_call_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/call_hospital"
+            android:src="@android:drawable/ic_menu_call"
+            app:tint="#000000" />
+
+        <!-- Biểu tượng máy quay -->
+        <ImageView
+            android:id="@+id/hospital_camera_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/camera_for_hospital"
+            android:src="@android:drawable/presence_video_online"
+            app:tint="#6D4A4A" />
+    </LinearLayout>
+</LinearLayout>

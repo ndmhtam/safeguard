@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otp_verification_code"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Thông báo email -->
+    <TextView
+        android:id="@+id/text_view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notify_sent_mail"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Các ô nhập mã OTP -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/otp_box_background"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/otp_box_background"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/otp_box_background"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="24sp"
+            android:layout_marginEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/otp_box_background"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/otp5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/otp_box_background"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/otp6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:autofillHints=""
+            android:background="@drawable/otp_box_background"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <!-- Liên kết Resend -->
+    <TextView
+        android:id="@+id/textViewResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_code"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Nút Confirm -->
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:padding="12dp"/>
+</LinearLayout>

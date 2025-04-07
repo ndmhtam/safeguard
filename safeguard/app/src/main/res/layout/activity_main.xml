@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:orientation="vertical">
+
+    <!-- Tiêu đề -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/greeting"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_view_notification"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/notification"
+            android:src="@drawable/ic_notification_active" />
+    </LinearLayout>
+
+    <!-- Khu vực bản đồ (Google Maps) và các nút -->
+    <FrameLayout
+        android:layout_width="326dp"
+        android:layout_height="443dp"
+        android:layout_margin="16dp">
+
+        <!-- Google Maps Fragment -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Layout chứa các nút (định vị, zoom in, zoom out, share) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <!-- Nút định vị vị trí bản thân -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/my_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/locate_me"
+                android:src="@android:drawable/ic_menu_mylocation"
+                app:backgroundTint="@android:color/white"
+                app:fabCustomSize="40dp"
+                app:fabSize="mini"
+                app:tint="@android:color/black" />
+
+            <!-- Nút chia sẻ vị trí -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/share_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/share_location"
+                android:src="@android:drawable/ic_menu_share"
+                app:backgroundTint="@android:color/white"
+                app:fabCustomSize="40dp"
+                app:fabSize="mini"
+                app:tint="@android:color/black" />
+
+            <!-- Nút zoom in -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/zoom_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/zoom_in"
+                android:src="@android:drawable/ic_menu_add"
+                app:backgroundTint="@android:color/white"
+                app:fabCustomSize="40dp"
+                app:fabSize="mini"
+                app:tint="@android:color/black" />
+
+            <!-- Nút zoom out -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/zoom_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/zoom_out"
+                android:src="@drawable/ic_minus"
+                app:backgroundTint="@android:color/white"
+                app:fabCustomSize="40dp"
+                app:fabSize="mini"
+                app:tint="@android:color/black" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        app:itemBackground="@drawable/bottom_nav_item_background"
+        app:itemIconTint="@drawable/bottom_nav_icon_tint"
+        app:itemTextColor="@drawable/bottom_nav_text_tint"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFF5F5F5">
+
+    <!-- Title: Safe Guard -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/safe_guard"
+        android:textColor="#009688"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+    <!-- Register Label -->
+
+    <TextView
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/register"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="email"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Confirm Password Input -->
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTexConfirmPassword"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:autofillHints="password"-->
+    <!--        android:hint="@string/confirm_password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:padding="12dp"-->
+    <!--        android:background="@drawable/edit_text_background"-->
+    <!--        android:layout_marginBottom="16dp"/>-->
+
+    <!-- Password requirements text -->
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="336dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/descriptions_required"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <!-- Social Login Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/image_google"
+            android:src="@drawable/image_google" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/image_facebook"
+            android:src="@drawable/image_facebook" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/image_apple"
+            android:src="@drawable/image_apple" />
+    </LinearLayout>
+
+    <!-- Register and Login Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/already_member_login"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:autoLink="none"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="@string/register"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
