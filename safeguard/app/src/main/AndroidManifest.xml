@@ -11,19 +11,18 @@
 
     <application
         android:allowBackup="true"
-        android:requestLegacyExternalStorage="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/ic_location"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/ic_location"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Safeguard"
-        >
+        android:theme="@style/Theme.Safeguard">
         <!-- Thêm API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCnf33F0PBrf7-pa7WiShzJmQAz-pvikIg" /> <!-- Thay API_KEY bằng API Key -->
+            android:value="AIzaSyCo89sKKEDocw0vl8SOgZB8FrTfEGvLBoI" /> <!-- Thay API_KEY bằng API Key -->
 
         <activity
             android:name=".LoginActivity"
@@ -34,9 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ConfirmActivity" />
         <activity android:name=".SupportActivity" />
@@ -49,6 +46,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

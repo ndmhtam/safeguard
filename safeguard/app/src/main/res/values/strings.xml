@@ -50,4 +50,10 @@
     <string name="notify_sent_mail">We have sent the to thuyanov@gmail.com</string>
     <string name="confirm">Confirm</string>
     <string name="resend_code">Didn\'t receive a code? Resend code</string>
+    <string name="firefighting">FIREFIGHTING</string>
+    <string name="sos_dn">SOS ĐÀ NẴNG</string>
+    <string name="call_firefighting">Call firefighting</string>
+    <string name="camera_for_firefighting">Camera for firefighting</string>
+    <string name="call_sos_dn">Call sos Da Nang</string>
+    <string name="camera_for_sos_dn">Camera for sos dn</string>
 </resources>

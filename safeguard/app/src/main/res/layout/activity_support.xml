@@ -111,4 +111,91 @@
             android:src="@android:drawable/presence_video_online"
             app:tint="#6D4A4A" />
     </LinearLayout>
+
+    <!-- firefighting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/firefighting"
+            android:src="@drawable/image_fire" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/firefighting"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Biểu tượng điện thoại -->
+        <ImageView
+            android:id="@+id/firefighting_call_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/call_firefighting"
+            android:src="@android:drawable/ic_menu_call"
+            app:tint="#000000" />
+
+        <!-- Biểu tượng máy quay -->
+        <ImageView
+            android:id="@+id/firefighting_camera_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/camera_for_firefighting"
+            android:src="@android:drawable/presence_video_online"
+            app:tint="#6D4A4A" />
+    </LinearLayout>
+
+    <!--  SOS ĐÀ NẴNG -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/image_sos" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sos_dn"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Biểu tượng điện thoại -->
+        <ImageView
+            android:id="@+id/sos_dn_call_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/call_sos_dn"
+            android:src="@android:drawable/ic_menu_call"
+            app:tint="#000000" />
+
+        <!-- Biểu tượng máy quay -->
+        <ImageView
+            android:id="@+id/sos_dn_camera_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/camera_for_sos_dn"
+            android:src="@android:drawable/presence_video_online"
+            app:tint="#6D4A4A" />
+    </LinearLayout>
 </LinearLayout>
